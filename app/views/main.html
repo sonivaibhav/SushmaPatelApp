@@ -86,7 +86,21 @@
 
                         },
                         initEvents = function() {
-
+                            //count number of items
+                            var numberOfItems = $( '.sl-slide' ).length;
+                            console.log(numberOfItems);
+                            //set current item
+                            var currentItem = 1;
+                            $nav.eq(currentItem).removeClass( 'nav-dot-current' );
+                            setInterval(function(){
+                                if(currentItem == numberOfItems){
+                                    currentItem = 1;
+                                }else{
+                                    currentItem++;
+                                }
+                                $nav.eq(currentItem).addClass( 'nav-dot-current' );
+                                slitslider.jump( currentItem );
+                            }, 5000);
                             $nav.each( function( i ) {
 
                                 $( this ).on( 'click', function( event ) {

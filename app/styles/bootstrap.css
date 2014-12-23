@@ -192,10 +192,10 @@ textarea {
     content: "";
   }
   pre,
-  blockquote {
+  /*blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
-  }
+  }*/
   thead {
     display: table-header-group;
   }
@@ -911,6 +911,7 @@ abbr.initialism {
   text-transform: uppercase;
 }
 
+/*
 blockquote {
   padding: 0 0 0 15px;
   margin: 0 0 20px;
@@ -954,13 +955,14 @@ blockquote.pull-right small:before {
 blockquote.pull-right small:after {
   content: '\00A0 \2014';
 }
+*/
 
-q:before,
+/*q:before,
 q:after,
 blockquote:before,
 blockquote:after {
   content: "";
-}
+}*/
 
 address {
   display: block;
@@ -3122,10 +3124,10 @@ table th[class*="span"],
           box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 
-.well blockquote {
+/*.well blockquote {
   border-color: #ddd;
   border-color: rgba(0, 0, 0, 0.15);
-}
+}*/
 
 .well-large {
   padding: 24px;
